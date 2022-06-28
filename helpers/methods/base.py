@@ -8,5 +8,5 @@ class Base():
 
     @staticmethod
     def status_code(url):
-        response = requests.get(url, auth=('digital', 'sector'))
+        response = requests.get(url, auth=(authorization_dev['login'], authorization_dev['pass']))
         return response
